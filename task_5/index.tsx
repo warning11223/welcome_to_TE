@@ -23,7 +23,7 @@ const ComponentOne = () => {
 };
 
 const ComponentTwo = () => {
-    const { data } = useSWR('custom_key_2', () => fetchOnePost({ delayMS: 2000 }));
+    const { data } = useSWR('custom_key_1', fetchOnePost);
     //...some logic
 
     return data ? (
